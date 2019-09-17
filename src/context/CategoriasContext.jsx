@@ -30,7 +30,9 @@ class CategoriasProvider extends Component {
 
   render() {
     return (
-      <CategoriasContext.Provider value={{ categorias: this.state.categorias }}>
+      <CategoriasContext.Provider
+        value={{ categorias: this.state.categorias, holaMundo: "Hola mundo" }}
+      >
         {this.props.children}
       </CategoriasContext.Provider>
     );
